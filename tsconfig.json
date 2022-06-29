@@ -15,7 +15,12 @@
     "jsx": "preserve",
     "incremental": true,
     "sourceMap": true,
-    "outDir": "dist"
+    "outDir": "dist",
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
